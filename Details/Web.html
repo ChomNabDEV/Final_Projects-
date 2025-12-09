@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        font-family: Kantumruy Pro, sans-serif;
+        color: white;
+      }
+
+      .msWord_popup {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        border: 0.1px double white;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      img {
+        width: 180px;
+        max-width: 100%;
+      }
+
+      .ctr_word {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .txt_content {
+        width: 50%;
+      }
+
+      hr {
+        margin: 20px 0;
+      }
+
+      p {
+        display: block;
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+      @media (max-width: 768px) {
+        .msWord_popup {
+          flex-direction: column;
+          text-align: center;
+          height: auto;
+          padding: 30px 15px;
+        }
+
+        .txt_content {
+          width: 100%;
+        }
+
+        .txt_content h1 {
+          font-size: 24px;
+        }
+
+        .txt_content h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+          margin-top: 15px;
+        }
+
+        img {
+          width: 140px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .txt_content h1 {
+          font-size: 20px;
+        }
+
+        .txt_content h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+
+        img {
+          width: 120px;
+        }
+        .logo {
+          display: none;
+        }
+        hr {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="msWord_popup">
+      <div class="ctr_word">
+        <img src="/Image/gbt-modified (1).png" alt="school" class="logo" />
+        <hr />
+        <img
+          src="/Image/css-3-logo_25462.png"
+          alt="word"
+          style="filter: invert(1) grayscale(1)"
+        />
+      </div>
+      <div class="txt_content">
+        <h1>Web Development<span style="color: #0b0">!!!</span></h1>
+        <h3 style="color: red">
+          Rate :
+          <span style="color: gold">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+          architecto soluta facere fuga nostrum molestiae consectetur alias modi
+          dicta. Magni illum alias delectus in nulla dolorum velit mollitia
+          omnis porro.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
