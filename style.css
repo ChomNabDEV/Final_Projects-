@@ -1057,5 +1057,11 @@ marquee:hover {
     display: flex;
     flex-direction: column;
   }
+  .ft_Contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
+
 
